@@ -14,10 +14,8 @@ export default class LoginScreen extends Component {
                     placeholderTextColor="#aaaaaa"
                     placeholder="Username"
                     />
-                    <TextInput style={styles.input}
-                    placeholderTextColor="#aaaaaa"
-                     placeholder="Email"
-                     />
+                   
+                    
                      <TextInput style={styles.input}
                     placeholderTextColor="#aaaaaa"
                      placeholder="Password"
@@ -44,7 +42,9 @@ export default class LoginScreen extends Component {
 
 const styles=StyleSheet.create({
 container:{
-    marginHorizontal:50
+    flex:1,
+    marginHorizontal:50,
+    // justifyContent:"space-around"
 },
 loginText:{
     fontSize:50,
