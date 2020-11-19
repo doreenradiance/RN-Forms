@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, FlatList } from 'react-native';
+import { StyleSheet, View} from 'react-native';
+import ContactsScreen from './ContactsScreen';
 import LoginScreen from './LoginScreen';
+import Contacts from './components/Contacts'
 
 
 class App extends Component {
@@ -15,50 +17,10 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-       <LoginScreen/>
+       {/* <LoginScreen/> */}
+       <ContactsScreen/>
       
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/*
-        <TextInput
-          style={styles.input}
-          placeholder='email'
-          autoCapitalize="none"
-          autoCorrect={false}
-          value={this.state.email}
-          onChangeText={(email) => {
-            this.setState({ email: email })
-          }}
-        />
-
-        <TextInput
-          style={styles.input}
-          placeholder='password'
-          autoCapitalize="none"
-          autoCorrect={false}
-          secureTextEntry={true}
-          value={this.state.password}
-          onChangeText={(password) => {
-            this.setState({ password: password })
-          }}
-        />
-
-        <TouchableOpacity  style={styles.buttonContainer}>
-          <Text style={styles.button}>Login</Text>
-        </TouchableOpacity>
-        */}
       </View>
     );
   }
@@ -66,7 +28,8 @@ class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 100
+    marginTop: 100,
+    justifyContent:"space-around"
   },
   input: {
     backgroundColor: 'blue', 
