@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View} from 'react-native';
 import ContactsScreen from './ContactsScreen';
-import LoginScreen from './LoginScreen';
-import Contacts from './components/Contacts'
-
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +15,7 @@ class App extends Component {
     return (
       <View style={styles.container}>
        {/* <LoginScreen/> */}
+       {/* {Contacts} */}
        <ContactsScreen/>
       
 
@@ -28,7 +26,7 @@ class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 100,
+    marginTop: 50,
     justifyContent:"space-around"
   },
   input: {
